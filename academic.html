@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PureBlaze</title>
+  <link rel="stylesheet" href="css/style.css">
+  <!--Icons-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <!--SWIPER JS LINK-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+  <style>
+/* ======== NAV BAR ======== */
+nav{
+  background: #A41F13;
+}
+.nav_container a, #open-menu-btn, #close-menu-btn{
+  color: #FAF5F1;
+}
+ .window-scroll{
+  background: #A41F13;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+.window-scroll .nav_menu a,
+.window-scroll h4,
+.window-scroll .motto,
+.window-scroll #open-menu-btn,
+.window-scroll #close-menu-btn {
+  color: #FAF5F1;
+}
+
+
+/* =========COURSES=========*/
+.courses1{
+  margin-top: 5rem;
+  background: #A41F13;
+  box-shadow: inset 0 0 3rem rgba(0, 0, 0, 0.5);
+}
+.courses1 h2{
+  color: #FAF5F1;
+}
+.courses_container1{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  width: 70%;
+}
+.course1{
+  background: #FAF5F1;
+  text-align: center;
+  border: 1px solid transparent;
+  transition: var(--transition);
+}
+.course1:hover{
+  color: #FAF5F1;
+  background: transparent;
+  border-color: #FAF5F1;
+}
+.course_info1{
+  padding: 1.2rem;  
+}
+.course_info1 p{
+  margin: 1.2rem 0 2rem;
+  font-size: 0.9rem;
+}
+
+/*=====TABLE SIZE====*/
+@media  screen and (max-width: 1024px){
+  .courses_container1{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+/*=====CP SIZE====*/
+@media  screen and (max-width: 600px){
+  .courses_container1{
+    grid-template-columns: 1fr;
+  }
+}
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="container nav_container">
+      <a href="index.html"><h4>PureBlaze Academy</h4><p class="motto">Empowering Minds, Shaping Futures</p></a>
+      <ul class="nav_menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="academic.html">Academics</a></li>
+        <li><a href="admission.html">Admissions</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+      <button id="open-menu-btn"><i class="fa-solid fa-bars"></i></button>
+      <button id="close-menu-btn"><i class="fa-solid fa-x"></i></button>
+    </div>
+  </nav>
+  <!--End of Nav Bar-->
+
+
+  <section class="courses1">
+    <h2> More Academic Programs</h2>
+    <div class="container courses_container1">
+      <article class="course1">
+        <div class="course_image1">
+          <img src="img_course/computer-science.jpg" alt="">
+        </div>
+        <div class="course_info1">
+          <h4>Bachelor of Science in Information Technology</h4>
+          <p>
+            Focuses on using computers and telecommunications to manage data. Includes network administration, software development, and information security.
+         </p>
+          <a href="#categories" class="btn btn-primary">Learn More</a>
+        </div>
+      </article>
+
+      <article class="course1">
+        <div class="course_image">
+          <img src="img_course/IT.jpg" alt="">
+        </div>
+        <div class="course_info1">
+          <h4>Bachelor of Science in Computer Science</h4>
+          <p>
+            Studies computational systems and algorithms. Involves software development, problem-solving, and understanding computer complexities.       
+          </p>
+          <a href="#categories" class="btn btn-primary">Learn More</a>
+        </div>
+      </article>
+
+      <article class="course1">
+        <div class="course_image">
+          <img src="img_course/computer-engr..jpg" alt="">
+        </div>
+        <div class="course_info1">
+          <h4>Bachelor of Science in Computer Engineering</h4>
+          <p>
+            Combines electrical engineering and computer science to design and build computer systems and networks, including hardware and embedded systems.
+          </p>
+          <a href="#categories" class="btn btn-primary">Learn More</a>
+        </div>
+      </article>
+
+      <article class="course1">
+        <div class="course_image">
+          <img src="img_course/BSTM.jpg" alt="">
+        </div>
+        <div class="course_info1">
+          <h4>Bachelor of Science in Tourism Management</h4>
+          <p>
+            Prepares students for careers in the travel and tourism industry. Covers destination management, travel operations, and tourism marketing.          </p>
+          <a href="#categories" class="btn btn-primary">Learn More</a>
+        </div>
+      </article>
+
+      <article class="course1">
+        <div class="course_image">
+          <img src="img_course/BSHM.jpg" alt="">
+        </div>
+        <div class="course_info1">
+          <h4>Bachelor of Science in Hospitality Management
+          </h4>
+          <p>
+            Equips students with skills for managing hospitality businesses. Covers hotel and restaurant management, event planning, and customer service.          </p>
+          <a href="#categories" class="btn btn-primary">Learn More</a>
+        </div>
+      </article>
+
+      <article class="course1">
+        <div class="course_image">
+          <img src="img_course/BSCRIM.jpg" alt="">
+        </div>
+        <div class="course_info1">
+          <h4>Bachelor of Science in Criminology</h4>
+          <p>
+            Focuses on the study of crime, its causes, and prevention. Includes criminal justice systems, forensic science, and law enforcement practices.          </p>
+          <a href="#categories" class="btn btn-primary">Learn More</a>
+        </div>
+      </article>
+
+      <article class="course1">
+        <div class="course_image">
+          <img src="img_course/BSBA.jpg" alt="">
+        </div>
+        <div class="course_info1">
+          <h4>Bachelor of Science in Business Administration</h4>
+          <p>
+            Focuses on business operations and management. Includes marketing, finance, human resources, and entrepreneurship.          </p>
+          <a href="#categories" class="btn btn-primary">Learn More</a>
+        </div>
+      </article>
+
+      <article class="course1">
+        <div class="course_image">
+          <img src="img_course/BSA.jpg" alt="">
+        </div>
+        <div class="course_info1">
+          <h4>Bachelor of Science in Accountancy </h4>
+          <p>
+            Emphasizes financial accounting, auditing, and taxation. Prepares students for careers in accounting and finance.          </p>
+          <a href="#categories" class="btn btn-primary">Learn More</a>
+        </div>
+      </article>
+
+      <article class="course1">
+        <div class="course_image">
+          <img src="img_course/BSPsych.jpg" alt="">
+        </div>
+        <div class="course_info1">
+          <h4>Bachelor of Science in Psychology</h4>
+          <p>
+            Studies human behavior and mental processes. Includes clinical psychology, counseling, and research methods.          </p>
+          <a href="#categories" class="btn btn-primary">Learn More</a>
+        </div>
+      </article>
+    </div>
+   </section>
+   <!-- End of Courses-->
+
+
+
+
+  <footer>
+    <div class="container footer_container">
+      <div class="footer_1">
+        <a href="index.html"><h4>PureBlaze Academy</h4></a>
+          <p>
+            Empowering Minds, Shaping Futures
+          </p>
+      </div>
+
+      <div class="footer_2">
+        <h4>Links</h4>
+        <ul class="permalinks">
+          <li><a href="aboutus.html">About Us</a></li>
+          <li><a href="academic.html">Academics</a></li>
+          <li><a href="admission.html">Admissions</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer_3">
+        <h4>Privacy</h4>
+        <ul class="privacy">
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms and Conditions</a></li>
+        </ul>
+      </div>
+
+      <div class="footer_4">
+        <h4>Contact Us</h4>
+        <div>
+          <p>Phone: (+63) 9299764768</p>
+          <p>Email: <a href="#">admissions@pureblaze.edu.ph</a></p>
+        </div>
+
+        <ul class="footer_socials">
+          <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></li>
+          <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
+          <li><a href="https://www.linkedin.com/login"><i class="fa-brands fa-linkedin"></i></a></li>
+          <li><a href="https://github.com/"><i class="fa-brands fa-github"></i></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer_copyright">
+      <small>Cedric Kyle D. Belisario | BSIT-22M1</small>
+      <!-- <small><br>Ella Francine Callejas | BSIT-22M1</small> -->
+    </div>
+  </footer>
+
+ <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+ <script>
+      var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+      },
+      // when window width is 600px
+      breakpoints:{
+        600:{
+          slidesPerView: 2
+        }
+      }
+  });
+ </script>
+ <script src="main.js"></script>
+</body>
+</html>
+
+
+
+

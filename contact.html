@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PureBlaze</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/contact.css">
+  <!--Icons-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <!--SWIPER JS LINK-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+</head>
+<body>
+  <nav>
+    <div class="container nav_container">
+      <a href="index.html"><h4>PureBlaze Academy</h4><p class="motto">Empowering Minds, Shaping Futures</p></a>
+      <ul class="nav_menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="academic.html">Academics</a></li>
+        <li><a href="admission.html">Admissions</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+      <button id="open-menu-btn"><i class="fa-solid fa-bars"></i></button>
+      <button id="close-menu-btn"><i class="fa-solid fa-x"></i></button>
+    </div>
+  </nav>
+  <!-- ================== End of Nav Bar ==============-->
+
+  <section class="contact">
+    <div class="container contact_container">
+      <aside class="contact_aside">
+        <div class="aside_image">
+          <img src="img/Cream and Black  Palm Trees Picture Postcard (2).png" alt="">
+        </div>
+        <h2>Contact Us</h2>
+        <p style="text-align: justify;">
+          If you have any questions or need further information, please do not hesitate to contact us. Our team is here to assist you with any inquiries or support you may require.
+        </p>
+        <ul class="contact_details">
+          <li>
+            <i class="fa-solid fa-phone"></i>
+            <h5>(+63) 9299764768</h5>
+          </li>
+          <li>
+            <i class="fa-solid fa-envelope"></i>
+            <a href="contact.html"><h5>admissions@pureblaze.edu.ph</h5></a>
+          </li>
+          <li>
+            <i class="fa-solid fa-location-dot"></i>
+            <h5>140 Emilio Aguinaldo Hwy, Dasmariñas, Cavite</h5>
+          </li>
+        </ul>
+        <ul class="contact_socials">
+          <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></li>
+          <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
+          <li><a href="https://www.linkedin.com/login"><i class="fa-brands fa-linkedin"></i></a></li>
+          <li><a href="https://github.com/"><i class="fa-brands fa-github"></i></a></li>
+        </ul>
+      </aside>
+
+      <form action="https://formspree.io/f/mnqeeobl" method="POST">
+        <div class="form_name">
+          <input type="text" name="First Name" placeholder="First Name" required>
+          <input type="text" name="Last Name" placeholder="Last Name" required>
+        </div>
+        <input type="email" name="Email Address" placeholder="Your Email Address" required>
+        <textarea name="Message" rows="7" placeholder="Message"></textarea>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
+    </div>
+  </section>
+  
+  <footer>
+    <div class="container footer_container">
+      <div class="footer_1">
+        <a href="index.html"><h4>PureBlaze Academy</h4></a>
+          <p>
+            Empowering Minds, Shaping Futures
+          </p>
+      </div>
+
+      <div class="footer_2">
+        <h4>Links</h4>
+        <ul class="permalinks">
+          <li><a href="aboutus.html">About Us</a></li>
+          <li><a href="academic.html">Academics</a></li>
+          <li><a href="admission.html">Admissions</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer_3">
+        <h4>Privacy</h4>
+        <ul class="privacy">
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms and Conditions</a></li>
+        </ul>
+      </div>
+
+      <div class="footer_4">
+        <h4>Contact Us</h4>
+        <div>
+          <p>Phone: (+63) 9299764768</p>
+          <p>Email: <a href="contact.html">admissions@pureblaze.edu.ph</a></p>
+        </div>
+
+        <ul class="footer_socials">
+          <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></li>
+          <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
+          <li><a href="https://www.linkedin.com/login"><i class="fa-brands fa-linkedin"></i></a></li>
+          <li><a href="https://github.com/"><i class="fa-brands fa-github"></i></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer_copyright">
+      <small>Cedric Kyle D. Belisario | BSIT-22M1</small>
+      <!-- <small><br>Ella Francine Callejas | BSIT-22M1</small> -->
+    </div>
+  </footer>
+
+ <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+ <script src="main.js"></script>
+ <script>
+      var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+      },
+      // when window width is 600px
+      breakpoints:{
+        600:{
+          slidesPerView: 2
+        }
+      }
+  });
+ </script>
+</body>
+</html>

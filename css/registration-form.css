@@ -1,0 +1,215 @@
+*{
+  font-family: "Montserrat", sans-serif;
+}
+.registration-form{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #292F36;
+}
+.registration_form-container{
+  position: relative;
+  max-width: 900px;
+  width: 100%;
+  border-radius: 6px;
+  padding: 30px;
+  margin: 0 15px;
+  background-color: #E0DBD8;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.125);
+}
+.registration_form-container form{
+  position: relative;
+  margin-top: 16px;
+  min-height: 500px;
+  overflow: hidden;
+}
+.registration_form-container form .form{
+  position: absolute;
+  background: #E0DBD8;
+  transition: 0.3s ease;
+
+}
+.registration_form-container form .form.second{
+  opacity: 0;
+  pointer-events: none;
+  transform: translateX(100%);
+}
+form.secActive .form.second{
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateX(0);
+}
+form.secActive .form.first{
+  opacity: 0;
+  pointer-events: none;
+  transform: translateX(-100%);
+}
+
+.registration_form-container form .title{
+  display: block;
+  margin-bottom: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 6px 0;
+}
+.registration_form-container form .fields{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+form .fields .input-field{
+  display: flex;
+  width: calc(100% / 3 -15px);
+  flex-direction: column;
+  margin: 4px 0;
+}
+.input-field label{
+  font-size: 12px;
+  font-weight: 500;
+}
+.input-field input{
+  outline: none;
+  border: 1px solid #E0DBD8;
+  padding: 0 15px;
+  height: 42px;
+  width: 15rem;
+  margin: 8px 0;
+  background-color: #FAF5F1;
+  border-radius: 5px;
+  font-weight: 400;
+  font-size: 14px;
+}
+.input-field input:is(:focus, :valid){
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.13);
+}
+.input-field.address-field {
+  width: calc(100% - 10rem); /* Subtracting the width of the zip code field to fit in the same line */
+}
+
+.input-field.address-field input {
+  width: 100%;
+}
+
+.input-field.zip_code_field {
+  width: 7rem;
+}
+
+.input-field.zip_code_field input {
+  width: 100%;}
+
+
+/* ========= DESIRED COURSE ========== */
+.input-field.desired-course select {
+  outline: none;
+  border: 1px solid #E0DBD8;
+  padding: 0 15px;
+  height: 42px;
+  width: 52.5rem;
+  margin: 8px 0;
+  background-color: #FAF5F1;
+  border-radius: 5px;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.input-field.desired-course select:hover,
+.input-field.desired-course select:focus {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.13);
+}
+
+.input-field.desired-course select::after {
+  content: "\25BC";
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+.input-field.desired-course select option[disabled]:first-child {
+  color: #999999;
+}
+
+/* ========= NEXT BTN ========== */
+.registration_form-container form button, .backBtn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 45px;
+  max-width: 200px;
+  width: 100%;
+  border: none;
+  outline: none;
+  color: #FAF5F1;
+  border-radius: 5px;
+  margin: 25px 0;
+  background: #A41F13;
+  transition: all 0.2s linear;
+  cursor: pointer;
+}
+
+.registration_form-container form button,
+.registration_form-container form .backBtn{
+  font-size: 14px;
+  font-weight: 400;
+}
+
+form button:hover{
+  background: #C26961;
+}
+form button i,
+form .backBtn i{
+  margin: 0 0.5rem;
+  font-size: 1rem;
+}
+form .backBtn i{
+  transform: rotate(180deg);
+}
+form .buttons{
+  display: flex;
+  align-items: centers;
+}
+form .buttons button, .backBtn{
+  margin-right: 14px;
+}
+
+
+/* =================== RESPONSIVE =================== */
+
+/* For tablet size (1024px) */
+@media (max-width: 1024px) {
+  .registration_form-container {
+    max-width: 80%;
+  }
+  .registration-form form{
+    overflow-y: scroll;
+  }
+  .registration-form form::-webkit-scrollbar{
+    display: none;
+  }
+  .input-field input[type="text"], .date-of-birth-field input[type="date"]{
+    width: 100%;
+  }
+  .input-field.desired-course select {
+    width: 100%;
+    max-width: none; 
+  }
+}
+@media (max-width: 600px) {
+
+  .input-field.desired-course select {
+    width: 100%;
+    max-width: none;
+  }
+
+  form .fields .input-field{
+    width: 100%;
+  }
+
+  .input-field input[type="text"], .date-of-birth-field input[type="date"]{
+    width: 100%;
+  }
+}
+
+
